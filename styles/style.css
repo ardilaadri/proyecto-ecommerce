@@ -4,3 +4,9 @@
     --background-black: #171717;
     --background-green: #5D986A;
 }
+
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
