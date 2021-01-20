@@ -23,6 +23,9 @@ html {
 }
 .collection__p {
     width: 100%;
+    font-size: 14px;
+    font-weight: 300;
+    color: var(--background-black);
 }
 .collection__title {
     width: 100%;
@@ -31,10 +34,24 @@ html {
     font-style: italic;
     font-weight: 700;
 }
+.collection__title:hover {
+    color: var(--background-green);
+}
+.collection__shop {
+    height: 40px;
+    padding: 10px 15px;
+    text-decoration: none;
+    color: white;
+    border-radius: 50px;
+    background-color: var(--background-black);
+}
+.collection__shop:hover {
+    background-color: var(--background-green);
+}
 .promos {
     display: grid;
     grid-template-columns: minmax(260px, 320px);
-    grid-template-rows: 100px 300px 320px 320px;
+    grid-template-rows: 120px 300px 360px 320px;
     gap: 20px;
     width: 100%;
     padding: 40px 20px;
