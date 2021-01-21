@@ -1,0 +1,15 @@
+.promos {
+    grid-template-columns: minmax(230px, 360px) minmax(160px, 280px) minmax(300px, 510px);
+    grid-template-rows: minmax(215px, 350px) minmax(300px, 500px);
+}
+.promos__collection {
+    padding-top: 120px;
+}
+.collection__title {
+    font-size: 72px;
+    line-height: 72px;
+}
+.collection__shop {
+    width: 120px;
+    height: 40px;
+}
