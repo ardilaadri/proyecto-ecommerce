@@ -15,6 +15,15 @@ html {
 }
 
 /* PROMOS */
+.promos {
+    display: grid;
+    grid-template-columns: 260px;
+    grid-template-rows: 120px 300px 360px 320px;
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 40px 20px;
+}
 .promos__collection {
     display: flex;
     flex-wrap: wrap;
@@ -47,14 +56,6 @@ html {
 }
 .collection__shop:hover {
     background-color: var(--background-green);
-}
-.promos {
-    display: grid;
-    grid-template-columns: minmax(260px, 320px);
-    grid-template-rows: 120px 300px 360px 320px;
-    gap: 20px;
-    width: 100%;
-    padding: 40px 20px;
 }
 .promos__season-sale {
     width: 100%;

@@ -1,0 +1,29 @@
+.promos {
+    grid-template-columns: 230px 160px 300px;
+    grid-template-rows: 215px 300px;
+    grid-template-areas: "natu desc daily"
+                         "beauty beauty daily";
+    justify-content: center;
+    gap: 20px;
+    width: 100%;
+    padding: 40px 10px;
+}
+.promos__collection {
+    grid-area: natu;
+    padding-top: 50px;
+}
+.collection__title {
+    font-size: 40px;
+    line-height: 40px;
+}
+.promos__season-sale {
+    grid-area: desc;
+}
+.promos__beauty-face {
+    grid-area: beauty;
+    padding-left: 150px;
+}
+.promos__daily-care {
+    grid-area: daily;
+    padding-top: 80px;
+}
