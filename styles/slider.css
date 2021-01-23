@@ -1,0 +1,123 @@
+/*********** reset ************/
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+html{
+    font-size: 62.5%;
+}
+body{
+    font-size: 16px;
+}
+
+
+/****************  modules  *****************/
+
+/***************   slider   ***************/
+
+.slider{
+	width: 100%;
+	position: relative;
+	display: flex;
+}
+.slide{
+	width: 100%;
+	list-style: none;
+	display: flex;
+}
+
+.slide__item{
+	position: relative;
+	width: 100%;
+	margin-right: -100%;
+	opacity: 0;
+	transition: opacity 2s;
+}
+
+.active{
+	z-index: 2;
+	opacity: 1;
+}
+
+.slide__item img{
+	width: 100%;
+}
+
+.arrow-nav{
+	list-style: none;
+	width: 100%;
+	height: 100%;
+	z-index: 40;
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+}
+
+.arrow-nav__item{
+	position: relative;
+	height: 3rem;
+	width: 3rem;
+	margin: auto 1rem;
+	display: flex;
+	overflow: hidden;
+    border: .2rem solid white;
+    border-radius: 50%;
+}
+
+.back{
+	background-color: #669766;
+	align-self: center;
+	position: absolute;
+	left: -160%;
+	z-index: 60;
+	height: 4rem;
+	width: 4rem;
+}
+
+.arrow-nav__item:hover .back{
+	border-radius: 50%;
+	animation-name: back;
+	animation-duration: .6s;
+	animation-duration: 1;
+	animation-fill-mode: forwards;
+	animation-timing-function:linear;
+}
+
+.arrow-nav__item a{
+	z-index: 80;
+}
+
+.arrow-nav__item svg{
+	height: 100%;
+	object-fit: cover;
+}
+
+
+@keyframes back {
+	0%{
+		left: -150%;
+	}
+	30%{
+		left: -100%;
+	}
+	60%{
+		left: -50%;
+	}
+	100%{
+		left: 0%;
+	}
+}
+
+@media screen and (min-width: 768px){
+	.arrow-nav__item{
+		height: 5rem;
+		width: 5rem;
+		margin: auto 1.5rem;
+	}
+	.back{
+		height: 6rem;
+		width: 6rem;
+	}
+}
