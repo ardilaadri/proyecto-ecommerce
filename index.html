@@ -3,16 +3,50 @@
 	<head>
 		<meta charset="UTF-8" />
 		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<title>E-commerce Project</title>
+		<link rel="stylesheet" href="styles/normalize.css" />
+		<link rel="preconnect" href="https://fonts.gstatic.com">
+		<link rel="stylesheet" href="styles/style.css" />
 		<link rel="stylesheet" href="./styles/slider.css" />
+		<link rel="stylesheet" href="./styles/tablet.css" media="(min-width: 700px)">
+		<link rel="stylesheet" href="./styles/desktop.css" media="(min-width: 950px)">
+		<link href="https://fonts.googleapis.com/css2?family=Playfair+Display:ital,wght@0,500;1,700&family=Roboto&display=swap" rel="stylesheet">
 		<link
-			rel="icon"
-			href="https://lh3.googleusercontent.com/qIj-ph2Y0DshYLhBh-iIMfblxC5at58l2X5GT5rPc4hCQTyDFiUQ8le8dz082evfbmRFcQYnsGciiR_Kn_iS6E3IP86qz8kC5lawJzgA0GMKlXn4cwEIQPoSe9jfi4ywMMStLpX2UU0qk1jx1DcQi8yA-6Re7pHW4UGJC30I4FuUYGm_MoBKT6Lyvoc3pSmXoKwPnLira7SZQyUoL-DeI6AZtP0_n_wn1JMFreQBFrkAFawAaJCNEX01n-GEmcPbIJztQnoRA097e435MdkfgKJfvWh9oD7hfFim3B1owPDw-Tf_7UJTRD-BhTrNzpnpBUKGt-owk8B7WpjvcQJJAMhaUFaXfR6CUOdgmCD5dUUiXn63s4IXAarcJgMLiY-v_Uaehfgaq-2J0IMhDK12Qp_rOBCQgfhkbvfRbNdCiFcUCei1l4s8fMRRRhPyJpH0fvV3eLadROwSP8LFSzjthcueRirWcg4P99ntbr1kpdqICdQyT8KvbEblXlCghGmZhdaiW8LebT0zAA9VTjFN4AYW3E-3RXP4UcQH64l6GWU_2YE01GAlZ2A3v3NBi0Uze8y8XsV_rZ_vSDh9JwjcPhDmiDnPUpkmACY2myid3OhC1WZ3J40GV1ez7z6Vv2lsgRTXKojy79iVaMdmbrpZuL5OEkU4bbuaNRYLrd17X3nvclQ2cUa3Fb0-CY79DA=s24-no?authuser=0"
+		rel="icon"
+		href="https://lh3.googleusercontent.com/qIj-ph2Y0DshYLhBh-iIMfblxC5at58l2X5GT5rPc4hCQTyDFiUQ8le8dz082evfbmRFcQYnsGciiR_Kn_iS6E3IP86qz8kC5lawJzgA0GMKlXn4cwEIQPoSe9jfi4ywMMStLpX2UU0qk1jx1DcQi8yA-6Re7pHW4UGJC30I4FuUYGm_MoBKT6Lyvoc3pSmXoKwPnLira7SZQyUoL-DeI6AZtP0_n_wn1JMFreQBFrkAFawAaJCNEX01n-GEmcPbIJztQnoRA097e435MdkfgKJfvWh9oD7hfFim3B1owPDw-Tf_7UJTRD-BhTrNzpnpBUKGt-owk8B7WpjvcQJJAMhaUFaXfR6CUOdgmCD5dUUiXn63s4IXAarcJgMLiY-v_Uaehfgaq-2J0IMhDK12Qp_rOBCQgfhkbvfRbNdCiFcUCei1l4s8fMRRRhPyJpH0fvV3eLadROwSP8LFSzjthcueRirWcg4P99ntbr1kpdqICdQyT8KvbEblXlCghGmZhdaiW8LebT0zAA9VTjFN4AYW3E-3RXP4UcQH64l6GWU_2YE01GAlZ2A3v3NBi0Uze8y8XsV_rZ_vSDh9JwjcPhDmiDnPUpkmACY2myid3OhC1WZ3J40GV1ez7z6Vv2lsgRTXKojy79iVaMdmbrpZuL5OEkU4bbuaNRYLrd17X3nvclQ2cUa3Fb0-CY79DA=s24-no?authuser=0"
 		/>
+		<title>E-commerce Project</title>
 	</head>
 	<body>
 		<div class="general-container"></div>
-		<header></header>
+		<header class="header">
+			<div class="header-wrapper">
+			  <div class="header__menu">
+				<div class="header__burger-menu">
+				  <img src="https://i.postimg.cc/MZ40PX6q/menu.png" alt="menu" />
+				</div>
+			  </div>
+			  <div class="header_Logo">
+				<img
+				  src="https://i.postimg.cc/D0dXwfXY/store-logo.png"
+				  alt="store-logo"
+				/>
+			  </div>
+			  <div class="header-icons">
+				<img
+				  src="https://i.postimg.cc/Zn98YzLG/search.png"
+				  alt="search-icon"
+				/>
+				<img
+				  src="https://i.postimg.cc/HsywfHn5/person.png"
+				  alt="person-icon"
+				/>
+				<img
+				  src="https://i.postimg.cc/Fz2j7CW7/shopping-cart.png"
+				  alt="shopping-cart-icon"
+				/>
+			  </div>
+			</div>
+		</header>
 		<main>
 			<section class="slider">
 				<ul class="slide">
@@ -86,7 +120,42 @@
 					</li>
 				</ul>
 			</section>
-			<section class="promos"></section>
+			<section class="promos">
+				<!-- Text new collection -->
+				<div class="promos__collection">
+				  <p class="collection__p">
+					New in collection 2020
+				  </p>
+				  <h2 class="collection__title">
+					Natural Beauty
+				  </h2>
+				  <a href="#" class="collection__shop">
+					Shop now
+				  </a>
+				</div>
+		
+				<!-- 25% season sale -->
+				<div class="promos__season-sale">
+				  <figure class="season-sale">
+					<img src="https://demo.onthemes.net/Prestashop/Presta02/OTP057_cosmetics/img/cms/cms-banner-01.jpg" alt="Descuento">
+				  </figure>
+				</div>
+		
+				<!-- Beauty face -->
+				<div class="promos__beauty-face">
+				  <figure class="beauty-face">
+					<img src="https://demo.onthemes.net/Prestashop/Presta02/OTP057_cosmetics/img/cms/cms-banner-02.jpg" alt="Beauty face">
+				  </figure>
+				</div>
+		
+				<!-- Daily care -->
+				<div class="promos__daily-care">
+				  <figure class="daily-care">
+					<img src="https://demo.onthemes.net/Prestashop/Presta02/OTP057_cosmetics/img/cms/cms-banner-03.jpg" alt="Daily care">
+				  </figure>
+				</div>
+		
+			</section>
 			<section class="trends"></section>
 			<section class="comments"></section>
 			<section class="releases"></section>
@@ -97,4 +166,5 @@
 		<footer></footer>
 		<script src="./scripts/slider.js"></script>
 	</body>
-</html>
+
+
