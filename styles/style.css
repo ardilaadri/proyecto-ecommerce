@@ -14,11 +14,15 @@ html {
     font-family: var(--body-font);
 }
 
+
+
 /* HEADER */
+
+
 .header {
     background-color: #171717;
     width: 100%;
-  }
+}
 .header-wrapper {
     padding: 0 1rem;
     height: 95px;
@@ -26,6 +30,36 @@ html {
     align-items: center;
     justify-content: space-between;
 }
+
+
+.header__burger-menu{
+    width: 30px;
+}
+.header__burger-menu img{
+    width: 100%;
+}
+
+
+.header__Logo{
+    width: 150px;
+}
+.header__Logo img{
+    width: 100%;
+}
+
+
+.header__icons{
+    display: flex;
+}
+.header__icons--item{
+    margin-left: 5px;
+    width: 30px;
+}
+.header__icons img{
+    width: 100%;
+}
+
+
 
 /* PROMOS */
 .promos {
