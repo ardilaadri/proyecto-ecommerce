@@ -85,13 +85,12 @@ body{
 	animation-timing-function:linear;
 }
 
-.arrow-nav__item a{
-	z-index: 80;
-}
 
 .arrow-nav__item svg{
+	cursor: pointer;
 	height: 100%;
 	object-fit: cover;
+	z-index: 80;
 }
 
 

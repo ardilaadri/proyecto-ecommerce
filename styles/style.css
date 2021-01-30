@@ -128,3 +128,129 @@ html {
     width: 100%;
     height: 100%;
 }
+
+
+/************    trends    ***********/
+.trends{
+    height: 250px;
+}
+
+
+/************    news    ***********/
+
+.news{
+    margin:auto 20px;
+    position: relative;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.news h2{
+    width: 100%;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.news__elements{
+    touch-action: manipulation;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: auto;
+}
+
+
+.news__item{
+    /* width: 280px; */
+    width: calc(100vw - 60px);
+    margin: auto 10px;
+}
+.news__item img{
+    width: 100%;
+    object-fit: cover;
+}
+
+.news__description{
+    text-align: center;
+    padding: 20px 30px;
+}
+.news__description p{
+    margin: 10px 0;
+}
+.news__description a{
+    text-decoration: none;
+    color: #615d5d;
+}
+
+/************    partners    ***********/
+
+.partners{
+    /* background-color: #5D986A; */
+    margin:auto 20px;
+    position: relative;
+    display: flex;
+    /* overflow: hidden; */
+}
+
+.partners__elements{
+    touch-action: manipulation;
+    height: 140px;
+    list-style: none;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    overflow: scroll;
+}
+
+
+.partners__elements li{
+    min-width: calc((100vw - 40px)/2 );
+    flex-grow: 1;
+}
+
+.partners__item{
+    width: 140px;
+    margin: auto;
+}
+
+/* .partners--active{
+    float: left;
+    min-width: 50%;
+} */
+
+.partners__item>img{
+    width: 100%;
+}
+.partners .arrow-nav{
+    position: absolute;
+    left: 0;
+    right: 0;
+}
+.partners .arrow-nav__item{
+    background-color: #ffffff;
+    border:.5px solid #c2c1c1;
+	position: absolute;
+	z-index: 40;
+    margin: 0;
+    width: 25px;
+    height: 25px;
+    top: 57.5px;
+}
+.nav--right{
+    right: 0;
+}
+.partners .arrow-nav__item:hover{
+    background-color: #5D986A;
+    transition: background-color 1s;
+}
+
+
+@media screen and (min-width: 480px){
+	.partners__elements li{
+        min-width: calc((100vw - 40px)/3 );
+    }
+    .news__item{
+        width: calc((50vw - 47px));
+    }
+}
