@@ -152,3 +152,40 @@
 .newsletter input[type="button"]:hover {
   background-color: #649267;
 }
+
+.socialmedia {
+  background: #202020;
+  color: #8a8989;
+  display: flex;
+  justify-content: space-around;
+  padding: 25px 0;
+}
+
+.socialmedia p {
+  position: relative;
+  top: 5px;
+}
+
+.socialmedia-images img {
+  margin: 0 5px;
+  position: relative;
+  top: 5px;
+}
+
+.socialmedia a img {
+  width: 20px;
+  filter: grayscale(100%);
+}
+
+.socialmedia a:hover img {
+  filter: grayscale(0%);
+}
+
+.credit-cards {
+  position: relative;
+  top: 5px;
+}
+
+.credit-cards img {
+  margin: 0 5px;
+}
