@@ -1,0 +1,11 @@
+.sponsors {
+}
+
+.sponsors img {
+  margin: 0 2.7rem;
+  filter: grayscale(100%);
+}
+
+.sponsors a:hover img {
+  filter: grayscale(0%);
+}
